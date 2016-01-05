@@ -1,5 +1,5 @@
 class Updates < ActionMailer::Base
-  default from: 'Boni<info@mr.si>'
+  default from: 'Boni<info@bloom.si>'
 
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
@@ -18,6 +18,6 @@ class Updates < ActionMailer::Base
     @new_features = report[:new_features] || []
     @new_features = @new_features.map{ |spid| Feature.find_by(spid: spid) }
 
-    mail to: 'Miha Rekar<info@mr.si>', subject: 'Bonar restaurants update report'
+    mail to: 'Miha Rekar<info@bloom.si>', subject: 'Bonar restaurants update report'
   end
 end
