@@ -9,12 +9,12 @@ describe Updates do
         expect(mail.subject).to eq('Bonar restaurants update report')
       end
 
-      it 'Miha is the receiver' do
-        expect(mail.to).to eq(['info@mr.si'])
+      it 'Nejc is the receiver' do
+        expect(mail.to).to eq(['info@bloom.si'])
       end
 
       it 'boni is the sender' do
-        expect(mail.from).to eq(['info@mr.si'])
+        expect(mail.from).to eq(['info@bloom.si'])
       end
 
       it 'has no body' do
