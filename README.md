@@ -3,7 +3,7 @@
 [![Build Status](http://img.shields.io/travis/mrfoto/bonar.svg?style=flat-square)](https://travis-ci.org/BloomSN/bonar)
 [![Code Climate](http://img.shields.io/codeclimate/github/mrfoto/bonar.svg?style=flat-square)](https://codeclimate.com/github/BloomSN/bonar)
 [![Coverage Status](http://img.shields.io/codeclimate/coverage/github/mrfoto/bonar.svg?style=flat-square)](https://codeclimate.com/github/BloomSN/bonar)
-[![Dependency Status](http://img.shields.io/gemnasium/mrfoto/bonar.svg?style=flat-square)](https://gemnasium.com/mrfoto/bonar)
+[![Dependency Status](http://img.shields.io/gemnasium/mrfoto/bonar.svg?style=flat-square)](https://gemnasium.com/BloomSN/bonar)
 
 > bónar -ja m (ọ̑) kdor ve, kje imajo bone: poglejmo na bonar / ura je bila 19 in ni vedela kje bi jedla, zato je pogledala na bonar / ostala sva brez besed in ti si rekel bonar
 
