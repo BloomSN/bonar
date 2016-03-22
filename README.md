@@ -22,6 +22,7 @@ Ko sem začenjal z izdelavo, sem se ravno začenjal učiti [Ruby on Rails](http:
 
 ##Thanks
 
+* Miha Rekar [@mrfoto](https://github.com/mrfoto) - for building this awsome project
 * Boštjan Vidovič: [@bostjanvidovic](https://twitter.com/bostjanvidovic) - for the icon
 * Mladen Prajdić: [@MladenPrajdic](https://twitter.com/MladenPrajdic) - for his sql expertise
 * Adam Sanderson: [@adamsanderson](https://github.com/adamsanderson) - for help with Postgres arrays
