@@ -5,11 +5,11 @@ class RestaurantSerializer < ActiveModel::Serializer
   def filter(keys)
     if scope == :basic
       keys = [:id, :latitude, :longitude, :price]
-    else if scope == :list
+    elsif scope == :list
       keys = [:id, :name, :address]
-    else if scope == :map
+    elsif scope == :map
       keys = [:id, :name, :address, :latitude, :longitude]
-    else if scope == :ids
+    elsif scope == :ids
       keys = [:id]
     else
       keys - [:latitude, :longitude] + [:coordinates]
