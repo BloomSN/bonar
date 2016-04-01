@@ -8,15 +8,7 @@ Rails.application.routes.draw do
   get 'search' => 'prehrana#search'
   get 'menu' => 'prehrana#menu'
   get 'content' => 'prehrana#content'
-  scope '/api' do
-  	get '/restaurants'
-  	get 'v2' do
-  		scope '/restaurants' do
-  			get '/' => 'prehrana#all_restaurants'
-  			get '/ids' => 'prehrana#search'
-  		end
-  end	
-  
+  get 'api/restaurants'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
