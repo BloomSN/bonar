@@ -33,6 +33,11 @@ class PrehranaController < ApplicationController
     end
   end
 
+  def find_by_id
+    @restaurant = Restaurant.find(params[:id])
+    render json: Restaurant.active, root: false
+  end
+
   def load_restaurant
     @restaurant = Restaurant.find(params[:restaurant])
     render layout: false
