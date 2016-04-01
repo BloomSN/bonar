@@ -2,6 +2,30 @@ class PrehranaController < ApplicationController
   def index
     @features = Feature.order(:title)
   end
+  
+  def all
+    if stale?(Restaurant.active.first)
+      render json: Restaurant.active, root: false
+    end
+  end
+	
+  def list_restaurants
+    if stale?(Restaurant.active.first)
+      render json: Restaurant.active, scope: :list, root: false
+    end
+  end
+  
+  def map_restaurants
+    if stale?(Restaurant.active.first)
+      render json: Restaurant.active, scope: :map, root: false
+    end
+  end
+  
+  def ids
+    if stale?(Restaurant.active.first)
+      render json: Restaurant.active, scope: :ids, root: false
+    end
+  end
 
   def all_restaurants
     if stale?(Restaurant.active.first)

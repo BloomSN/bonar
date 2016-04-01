@@ -12,8 +12,10 @@ Rails.application.routes.draw do
   	get '/restaurants' => 'api#restaurants'
   	scope '/v2' do
   		scope '/restaurants' do
-  			get '/all' => 'prehrana#all_restaurants'
-  			get '/ids' => 'prehrana#search'
+  			get '/detailed' => 'prehrana#all'
+  			get '/list' => 'prehrana#list_restaurants'
+  			get '/map' => 'prehrana#map_restaurants'
+  			get '/ids' => 'prehrana#ids'
   		end
   	end
   end
