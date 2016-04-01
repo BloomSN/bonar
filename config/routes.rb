@@ -10,11 +10,12 @@ Rails.application.routes.draw do
   get 'content' => 'prehrana#content'
   scope '/api' do
   	get '/restaurants'
-  	get 'v2' do
+  	scope 'v2' do
   		scope '/restaurants' do
   			get '/' => 'prehrana#all_restaurants'
   			get '/ids' => 'prehrana#search'
   		end
+  	end
   end
 
   # Example of regular route:
