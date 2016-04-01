@@ -9,10 +9,10 @@ Rails.application.routes.draw do
   get 'menu' => 'prehrana#menu'
   get 'content' => 'prehrana#content'
   scope '/api' do
-  	#get '/restaurants'
+  	get '/restaurants' => 'prehrana#restaurants'
   	scope 'v2' do
   		scope '/restaurants' do
-  			get '/' => 'prehrana#all_restaurants'
+  			get '/all' => 'prehrana#all_restaurants'
   			get '/ids' => 'prehrana#search'
   		end
   	end
