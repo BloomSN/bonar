@@ -18,7 +18,7 @@ Rails.application.routes.draw do
   			get '/ids' => 'prehrana#ids'
   		end
   		scope '/restaurant' do
-  			get '/:id' => 'prehrana#find_by_id' as: 
+  			get '/:id' => 'prehrana#find_by_id' as: :id
   		end
   	end
   end
