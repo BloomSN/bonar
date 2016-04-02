@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   			get '/list' => 'prehrana#list_restaurants'
   			get '/map' => 'prehrana#map_restaurants'
   			get '/ids' => 'prehrana#ids'
+  			get '/ids_array' => 'prehrana#ids_array'
   		end
   		scope '/restaurant' do
   			get '/:id' => 'prehrana#find_by_id'

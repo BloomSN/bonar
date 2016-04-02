@@ -55,7 +55,7 @@ class PrehranaController < ApplicationController
   alias_method :menu, :load_restaurant
   alias_method :content, :load_restaurant
 
-  def search
+  def ids_array
     ids = Restaurant.with_features(params[:features]).with_text(params[:search]).pluck(:id)
     render json: ids, root: false
   end
