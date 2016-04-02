@@ -158,3 +158,163 @@ Should you use it, you absolutely must cache the response, since the data only c
   },…
 ]
 ```
+
+* `GET http://bonar.si/api/v2/restaurants/detail`
+
+```json
+[
+  {
+    "id": 12813,
+    "name": "Halo Shaolin - dostava",
+    "address": "Trg OF 13, Ljubljana",
+    "telephone": [
+      "040549068",
+      "0803808"
+    ],
+    "price": "4.0",
+    "coordinates": [
+      "46.0541149271136",
+      "14.557732745077"
+    ],
+    "opening": {
+      "week": [
+        "10:00",
+        "20:00"
+      ],
+      "saturday": [
+        "11:00",
+        "20:00"
+      ],
+      "sunday": [
+        "11:00",
+        "20:00"
+      ],
+      "notes": "27.12. od 08.00 do 18.0030.12. od 08.00 do 20.0031.12. od 08.00 do 15.00"
+    },
+    "menu": [
+      [
+        "kislo pekoča juha",
+        "govedina zelenjavo",
+        "mešana",
+        "ocvrta banana"
+      ],
+      [
+        "zelenjavna juha",
+        "mongolska govedina",
+        "mešana",
+        "Ocvrti ananas"
+      ],
+      [
+        "koruzna z rakci",
+        "riž s piščancem",
+        "mešana",
+        "ocvrta banana"
+      ]
+    ],
+    "features": [
+      {
+        "id": 2,
+        "title": "celiakiji prijazni obroki"
+      },
+      {
+        "id": 5,
+        "title": "dostava"
+      },
+      {
+        "id": 11,
+        "title": "kosila"
+      },
+      {
+        "id": 10,
+        "title": "odprto ob vikendih"
+      },
+      {
+        "id": 1,
+        "title": "vegetarijanska prehrana"
+      }
+    ]
+  },
+  {
+    "id": 12814,
+    "name": "Hiša pod gradom",
+    "address": "Streliška 10, Ljubljana",
+    "telephone": [],
+    "price": "3.27",
+    "coordinates": [
+      "46.0493199622809",
+      "14.5113411755481"
+    ],
+    "opening": {
+      "week": [
+        "11:00",
+        "20:00"
+      ],
+      "saturday": [
+        "12:00",
+        "20:00"
+      ],
+      "sunday": false
+    },
+    "menu": [],
+    "features": [
+      {
+        "id": 2,
+        "title": "celiakiji prijazni obroki"
+      },
+      {
+        "id": 11,
+        "title": "kosila"
+      },
+      {
+        "id": 10,
+        "title": "odprto ob vikendih"
+      },
+      {
+        "id": 1,
+        "title": "vegetarijanska prehrana"
+      }
+    ]
+  },…
+]
+```
+
+* `GET http://bonar.si/api/v2/restaurants/list`
+
+```json
+[
+	{
+	"id":11457,
+	"name":"Restavracija McDonald's Novo mesto",
+	"address":"Ljubljanska 24, Novo mesto"},
+	},…
+]
+```
+
+* `GET http://bonar.si/api/v2/restaurants/map`
+
+```json
+[
+	{
+	"id":11457,
+	"name":"Restavracija McDonald's Novo mesto",
+	"address":"Ljubljanska 24, Novo mesto"},
+	"latitude":"45.81474043922832",
+	"longitude":"15.15410678653271"
+	},…
+]
+```
+
+* `GET http://bonar.si/api/v2/restaurants/ids`
+
+```json
+[
+	{
+	"id":11457,
+	…
+	}
+]
+```
+
+* `GET http://bonar.si/api/v2/restaurants/ids_array`
+
+Not completed.
