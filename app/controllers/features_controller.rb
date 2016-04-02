@@ -1,14 +1,14 @@
 class FeaturesController < ApplicationController
 	
   def ids
-  	if stale?(Feature.active.first)
-      render json: Feature.active, scope: :ids, root: false
+  	if stale?(Feature.first)
+      render json: Feature, scope: :ids, root: false
     end
   end
   
   def features_detailed
-  	if stale?(Feature.active.first)
-      render json: Feature.active, scope: :detailed, root: false
+  	if stale?(Feature.first)
+      render json: Feature, scope: :detailed, root: false
     end
   end  
   
