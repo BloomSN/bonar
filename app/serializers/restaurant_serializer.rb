@@ -11,6 +11,12 @@ class RestaurantSerializer < ActiveModel::Serializer
       keys = [:id, :name, :address, :latitude, :longitude]
     elsif scope == :ids
       keys = [:id]
+    elsif scope == :res_details
+      keys = [:telephone, :price, :coordinates, :opening]
+    elsif scope == :res_details_with_menu
+      keys = [:telephone, :price, :coordinates, :opening, :menu]
+    elsif scope == :menu
+      keys = [:menu]
     else
       keys - [:latitude, :longitude] + [:coordinates]
     end

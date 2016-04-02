@@ -19,6 +19,14 @@ Rails.application.routes.draw do
   		end
   		scope '/restaurant' do
   			get '/:id' => 'prehrana#find_by_id'
+  			get '/with_menu/:id' => 'prehrana#find_by_id_with_menu'
+  			scope '/menu' do
+  				get '/:id' => 'prehrana#get_menu_by_id'
+  			end
+  		scope '/features' do
+  			get '/:id' => 'prehrana#feature_by_id'
+  			get '/detailed' => 'prehrana#features_detailed'
+  			get '/ids' => 'prehrana#features_ids'
   		end
   	end
   end
