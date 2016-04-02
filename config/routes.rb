@@ -25,8 +25,8 @@ Rails.application.routes.draw do
   			end
   		end
   		scope '/features' do
-  			get '/:id' => 'prehrana#feature_by_id'
-  			get '/detailed' => 'prehrana#features_detailed'
+  			get '/:id' => 'features#feature_by_id'
+  			get '/detailed' => 'features#features_detailed'
   			get '/ids' => 'features#features_ids'
   		end
   	end

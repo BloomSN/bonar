@@ -4,7 +4,7 @@ class FeaturesController < ApplicationController
   end
   
 	
-  def feature_by_id
+  def features_ids
     if stale?(Features.active.first)
       render json: Features.active, scope: :ids, root: false
     end
@@ -16,7 +16,7 @@ class FeaturesController < ApplicationController
     end
   end  
   
-  def features_ids
+  def feature_by_id
     @restaurant = Features.find(params[:id])
     render json: Features.active.where('id = ?', @restaurant.id), scope: :name, root: false
   end
