@@ -23,6 +23,7 @@ Rails.application.routes.draw do
   			scope '/menu' do
   				get '/:id' => 'prehrana#get_menu_by_id'
   			end
+  		end
   		scope '/features' do
   			get '/:id' => 'prehrana#feature_by_id'
   			get '/detailed' => 'prehrana#features_detailed'
