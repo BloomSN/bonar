@@ -6,6 +6,8 @@ class FeatureSerializer < ActiveModel::Serializer
       keys = [:id]
     elsif scope == :detailed
       keys = [:id, :title]
+    elsif scope == :name
+      keys = [:title]
     end
   end
 

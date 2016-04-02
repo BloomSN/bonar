@@ -4,43 +4,21 @@ class FeaturesController < ApplicationController
   end
   
 	
-  def ids
+  def feature_by_id
     if stale?(Features.active.first)
       render json: Features.active, scope: :ids, root: false
     end
   end
   
-  def map_restaurants
-    if stale?(Restaurant.active.first)
-      render json: Restaurant.active, scope: :map, root: false
+  def features_detailed
+    if stale?(Features.active.first)
+      render json: Features.active, scope: :detailed, root: false
     end
-  end
+  end  
   
-  def ids
-    if stale?(Restaurant.active.first)
-      render json: Restaurant.active, scope: :ids, root: false
-    end
-  end
-
-  def all_restaurants
-    if stale?(Restaurant.active.first)
-      render json: Restaurant.active, scope: :basic, root: false
-    end
-  end
-  
-  def find_by_id
-    @restaurant = Restaurant.find(params[:id])
-    render json: Restaurant.active.where('id = ?', @restaurant.id), scope: :res_details, root: false
-  end
-  
-  def find_by_id_with_menu
-    @restaurant = Restaurant.find(params[:id])
-    render json: Restaurant.active.where('id = ?', @restaurant.id), scope: :res_details_with_menu, root: false
-  end
-  
-  def get_menu_by_id
-    @restaurant = Restaurant.find(params[:id])
-    render json: Restaurant.active.where('id = ?', @restaurant.id), scope: :menu, root: false
+  def features_ids
+    @restaurant = Features.find(params[:id])
+    render json: Features.active.where('id = ?', @restaurant.id), scope: :name, root: false
   end
 
   def load_restaurant
