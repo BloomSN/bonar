@@ -3,15 +3,10 @@ class FeaturesController < ApplicationController
     @features = Feature.order(:title)
   end
   
-  def all
-    if stale?(Restaurant.active.first)
-      render json: Restaurant.active, root: false
-    end
-  end
 	
-  def list_restaurants
-    if stale?(Restaurant.active.first)
-      render json: Restaurant.active, scope: :list, root: false
+  def ids
+    if stale?(Features.active.first)
+      render json: Features.active, scope: :ids, root: false
     end
   end
   
