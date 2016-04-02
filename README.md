@@ -283,9 +283,9 @@ Should you use it, you absolutely must cache the response, since the data only c
 ```json
 [
 	{
-	"id":11457,
-	"name":"Restavracija McDonald's Novo mesto",
-	"address":"Ljubljanska 24, Novo mesto"},
+		"id":11457,
+		"name":"Restavracija McDonald's Novo mesto",
+		"address":"Ljubljanska 24, Novo mesto"},
 	},…
 ]
 ```
@@ -295,11 +295,11 @@ Should you use it, you absolutely must cache the response, since the data only c
 ```json
 [
 	{
-	"id":11457,
-	"name":"Restavracija McDonald's Novo mesto",
-	"address":"Ljubljanska 24, Novo mesto"},
-	"latitude":"45.81474043922832",
-	"longitude":"15.15410678653271"
+		"id":11457,
+		"name":"Restavracija McDonald's Novo mesto",
+		"address":"Ljubljanska 24, Novo mesto"},
+		"latitude":"45.81474043922832",
+		"longitude":"15.15410678653271"
 	},…
 ]
 ```
@@ -309,7 +309,7 @@ Should you use it, you absolutely must cache the response, since the data only c
 ```json
 [
 	{
-	"id":11457,
+		"id":11457,
 	…
 	}
 ]
@@ -318,3 +318,117 @@ Should you use it, you absolutely must cache the response, since the data only c
 * `GET http://bonar.si/api/v2/restaurants/ids_array`
 
 Not completed.
+
+* `GET http://bonar.si/api/v2/restaurant/{id}`
+
+```json
+[
+	{
+		"telephone":[],
+		"price":"3,87 EUR",
+		"coordinates": [
+			"46.0503595819777",
+			"14.5062179861431"],
+		"opening":{
+			"week":[
+				"11:00",
+				"20:00"
+			],
+			"saturday":[
+				"11:00",
+				"20:00"
+			],"sunday":[
+				"11:00",
+				"20:00"
+			]
+		}
+	},…
+]
+```
+
+* `GET http://bonar.si/api/v2/restaurant/with_menu/{id}`
+
+```json
+[
+  {
+    "telephone": [
+      
+    ],
+    "price": "3,87 EUR",
+    "coordinates": [
+      "46.0503595819777",
+      "14.5062179861431"
+    ],
+    "opening": {
+      "week": [
+        "11:00",
+        "20:00"
+      ],
+      "saturday": [
+        "11:00",
+        "20:00"
+      ],
+      "sunday": [
+        "11:00",
+        "20:00"
+      ]
+    },
+    "menu": [
+      [
+        "Dnevna juha",
+        "Testenine s pi\u0161\u010dancem in bu\u010dkami",
+        "Me\u0161ana solata",
+        "Sezonsko sadje"
+      ],
+      [
+        "Dnevna juha",
+        "Testenine bolognese",
+        "Me\u0161ana solata",
+        "Sezonsko sadje"
+      ],
+      [
+        "Dnevna juha",
+        "Testenine carbonara",
+        "Me\u0161ana solata",
+        "Sezonsko sadje"
+      ],
+      [
+        "Dnevna juha",
+        "Njoki s pi\u0161\u010dancem in bu\u010dkami",
+        "Me\u0161ana solata",
+        "Sezonsko sadje"
+      ],…
+    ]
+  }
+]
+```
+
+* `GET http://bonar.si/api/v2/restaurant/menu/{id}`
+
+```json
+[
+  {
+    "menu": [
+      [
+        "Dnevna juha",
+        "Testenine s pi\u0161\u010dancem in bu\u010dkami",
+        "Me\u0161ana solata",
+        "Sezonsko sadje"
+      ],
+      [
+        "Dnevna juha",
+        "Testenine bolognese",
+        "Me\u0161ana solata",
+        "Sezonsko sadje"
+      ],
+      [
+        "Dnevna juha",
+        "Testenine carbonara",
+        "Me\u0161ana solata",
+        "Sezonsko sadje"
+      ],…
+    ]
+  }
+]
+      
+```
