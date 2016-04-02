@@ -1,11 +1,11 @@
 class FeaturesController < ApplicationController
 	
   def features_ids
-      render json: scope: :ids, root: false
+      render json: Feature.active, scope: :ids, root: false
   end
   
   def features_detailed
-      render json: scope: :detailed, root: false
+      render json: Feature.active, scope: :detailed, root: false
   end  
   
   def feature_by_id
