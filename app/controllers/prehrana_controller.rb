@@ -33,12 +33,12 @@ class PrehranaController < ApplicationController
     end
   end
   
-  def find_by
+  def find_by_id
     @restaurant = Restaurant.find(params[:id])
     render json: Restaurant.active.where('id = ?', @restaurant.id), scope: :res_details, root: false
   end
   
-  def find_by_id_id_with_menu
+  def find_by_id_with_menu
     @restaurant = Restaurant.find(params[:id])
     render json: Restaurant.active.where('id = ?', @restaurant.id), scope: :res_details_with_menu, root: false
   end
