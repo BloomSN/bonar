@@ -3,6 +3,7 @@
 require ::File.expand_path('../config/environment',  __FILE__)
 run Bonar::Application
 
+#cors
 require 'rack/cors'
 use Rack::Cors do
 
