@@ -158,6 +158,7 @@ Should you use it, you absolutely must cache the response, since the data only c
   },…
 ]
 ```
+###From here on you can find the new v2 api, there might be some changes here so proceed with caution:
 
 * `GET http://bonar.si/api/v2/restaurants/detail`
 
