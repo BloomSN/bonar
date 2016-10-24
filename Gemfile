@@ -15,7 +15,9 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'slim-rails'
 gem 'maildown'
+gem 'rack-smart-app-banner', require: 'rack/smart-app-banner'
 gem 'rack-cors', :require => 'rack/cors'
+
 
 group :production do
   gem 'puma'

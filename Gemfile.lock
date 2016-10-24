@@ -158,6 +158,8 @@ GEM
     rack-cors (0.4.0)
     rack-mini-profiler (0.9.7)
       rack (>= 1.1.3)
+    rack-smart-app-banner (0.0.1)
+      rack (>= 1.2.0, <= 2.0.0)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.2.4)
@@ -298,6 +300,7 @@ DEPENDENCIES
   quiet_assets
   rack-cors
   rack-mini-profiler
+  rack-smart-app-banner
   rails (~> 4.2.1)
   rails_12factor
   rspec-rails

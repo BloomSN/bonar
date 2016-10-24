@@ -3,6 +3,12 @@
 require ::File.expand_path('../config/environment',  __FILE__)
 run Bonar::Application
 
+
+require "rack/smart-app-banner"
+
+use Rack::SmartAppBanner, app_id: "765053076",
+                          app_argument: lambda {|request| request.path}
+
 #cors
 require 'rack/cors'
 use Rack::Cors do
