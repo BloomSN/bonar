@@ -6,8 +6,7 @@ run Bonar::Application
 
 #require "rack/smart-app-banner"
 
-#use Rack::SmartAppBanner, app_id: "765053076",
-                          app_argument: lambda {|request| request.path}
+#use Rack::SmartAppBanner, app_id: "765053076", app_argument: lambda {|request| request.path}
 
 #cors
 require 'rack/cors'
