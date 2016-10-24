@@ -1,7 +1,7 @@
 # This file is used by Rack-based servers to start the application.
 
-require "rack/smart-app-banner"
-use Rack::SmartAppBanner, app_id: "765053076"
+"require "rack/smart-app-banner"
+"use Rack::SmartAppBanner, app_id: "765053076"
 
 require ::File.expand_path('../config/environment',  __FILE__)
 run Bonar::Application
