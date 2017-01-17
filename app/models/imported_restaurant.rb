@@ -6,11 +6,11 @@ class ImportedRestaurant
   end
 
   def menu_html
-    @menu_html ||= Nokogiri::HTML(open(RESTAURANT_URL % [spid, 0]))
+    @menu_html ||= Nokogiri::HTML(open(RESTAURANT_URL % [spid, 0], :allow_redirections => :all))
   end
 
   def info_html
-    @info_html ||= Nokogiri::HTML(open(RESTAURANT_URL % [spid, 1]))
+    @info_html ||= Nokogiri::HTML(open(RESTAURANT_URL % [spid, 1], :allow_redirections => :all))
   end
 
   def spid
