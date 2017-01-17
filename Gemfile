@@ -7,6 +7,7 @@ gem 'figaro'
 gem 'pg'
 gem 'active_model_serializers'
 gem 'nokogiri'
+gem 'open_uri_redirections'
 gem 'geocoder'
 
 gem 'sass-rails', '~> 5.0'
