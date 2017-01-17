@@ -3,7 +3,7 @@ class RestaurantImporter
   attr_reader :report
 
   def initialize
-    @doc = Nokogiri::HTML(open(DIRECTORY_URL))
+    @doc = Nokogiri::HTML(open(DIRECTORY_URL, :allow_redirections => :all))
   end
 
   def restaurants
